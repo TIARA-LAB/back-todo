@@ -12,7 +12,7 @@ app.use(cors());
 await connectDB();
 
 app.use(express.json());
-app.use("/todos", todoRoutes);
+app.use("/api/todos", todoRoutes);
 
 app.get("/", (req, res) => {
   res.send("Todo is running");
